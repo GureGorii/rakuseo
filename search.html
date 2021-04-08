@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Yahoo!ショッピングSEO効率化アプリ</h1>
+<h3>現時点の検索順位をまとめたcsvファイルを作成出来ます。</h3>
+<p>検索に約5~6秒かかります</p>
+<form action="/" method="POST">
+    <label for="title">検索キーワードを入力してください</label>
+    <input type="text" name="keyword">
+    <br>
+    <br>
+    <label for="title">検索URLを入力してください</label>
+    <input type="text" name="url">
+    <br>
+    <br>
+    <input type="submit" value="Create">
+</form>
+{% endblock %}
