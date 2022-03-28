@@ -24,10 +24,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-#今日の日付を取得
-#today = datetime.datetime.now()
-#today_now = today.strftime('%y%m%d%H')
-
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     url = db.Column(db.String(255), nullable=False)
@@ -176,8 +172,6 @@ def search():
                     if key in item_key_3:
                         tmp_item_3[key] = value
                 item_list_3.append(tmp_item_3.copy())
-
-        #item_list = item_list_2
 
         # データフレームを作成
         hits = pd.DataFrame(item_list)
