@@ -7,5 +7,6 @@
 - フレームワーク：Flask
 - データベース：SQlite
 - サーバ：heroku
+- API：楽天市場API
 ### URL
 - https://rakuseo.herokuapp.com/
